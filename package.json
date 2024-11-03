@@ -1,0 +1,27 @@
+{
+  "name": "wdio-test-automation-framework",
+  "version": "1.0.0",
+  "description": "WDIO E2E Test Automation Framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wdio",
+    "cucumber",
+    "e2et",
+    "tests"
+  ],
+  "author": "Shubham Bhutkar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.8",
+    "@wdio/cucumber-framework": "^9.2.8",
+    "@wdio/local-runner": "^9.2.8",
+    "@wdio/spec-reporter": "^9.2.8",
+    "chai": "^5.1.2"
+  }
+}
