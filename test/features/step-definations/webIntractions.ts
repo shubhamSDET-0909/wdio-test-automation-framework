@@ -6,7 +6,7 @@ import * as chai from "chai";
  */
 
 Given(/^A web page is opened$/, async function () {
-  await browser.url("https://the-internet.herokuapp.com/upload");
+  await browser.url("https://the-internet.herokuapp.com/frames");
   await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
   await browser.maximizeWindow();
 });
@@ -167,10 +167,29 @@ When(/^perform web Intractions$/, async function () {
  */
 
 //console.log(process.cwd());
- await $(`#file-upload`).addValue(`${process.cwd()}/data/dummydata.txt`)
- await $(`#file-submit`).click();
+//  await $(`#file-upload`).addValue(`${process.cwd()}/data/dummydata.txt`)
+//  await $(`#file-submit`).click();
 
-await browser.pause(3000)
+// await browser.pause(3000)
+
+//=iFrame
+
+/**
+ * 6.Frames
+ * Methods used
+ * SwitchToFrame
+ * SwitchToParentFrame
+//  */
+
+// await $(`=iFrame`).click();
+// let ele = await $(`#mce_0_ifr`);
+// await browser.switchFrame(ele);
+
+// //Interaction with Frme
+// await $(`.tox-icon`).click();
+// await $(`#tinymce`).setValue(`Typing into a frame`);
+// await browser.switchToParentFrame();
+// await browser.pause(3000);
 
 });
 
