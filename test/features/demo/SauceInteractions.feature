@@ -3,8 +3,8 @@ Feature: SauceIntractions Feature
     @sauceInteraction
     Scenario Outline: SauceLab Interactions
         Given Login to inventory web app
-        # Then Inventory page should list <NumberofProducts>
-        # Then Validate all products have valid price (price > 0)
+        Then Inventory page should list <NumberofProducts>
+        Then Validate all products have valid price
 
 
         Examples:
